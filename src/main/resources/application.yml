@@ -1,0 +1,25 @@
+server:
+  port: 9193
+spring:
+  application:
+    name: payment-service
+  jpa:
+    defer-datasource-initialization: true
+    h2:
+      console:
+        enabled: true
+        path: /h2-console
+    datasource:
+      url: jdbc:h2:mem:testdb1
+      username: sa
+      password:
+      driverClassName: org.h2.Driver
+
+application:
+  name: PAYMENT-SERVICE
+
+  logging:
+    file: /Users/apple/Documents/microservice/microservice.log
+
+
+
